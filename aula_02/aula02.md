@@ -17,3 +17,5 @@ O isolamento entre as partes gera algo mais seguro. Ao alterar uma das partes, n
 
 6. __Natural__: Mais fácil de entender. Maior atenção às funcionalidades do que aos detalhes de implementação.
 
+
+AA
