@@ -21,6 +21,7 @@ class ContaBancaria:
             self.saldo -= valor
             print(f'\033[34mR${valor:,.2f} Sacado na conta {self.id}.\033[m')
 
+
 c1 = ContaBancaria(112, 'Rian', 3000)
 print(c1)
 c1.depositar(500)
