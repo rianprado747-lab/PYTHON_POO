@@ -15,12 +15,14 @@ class Churrasco:
     def analisar(self):
         kg = self.pessoas * 0.4
         valor = 82.40 * kg
-        caixa = Panel(f'[white]{self.pessoas} pessoas irão participar do churrasco[/]'
-                      f'\n[red]R${valor:.2f} por pessoa[/] '
-                      f'\n[purple]{kg}KG de carne será necessário[/]',
-                      title = self.titulo,style = 'blue', width= 30)
+        preco_p = valor / self.pessoas
+        caixa = Panel(f'[white]{self.pessoas} pessoas irão participar do {self.titulo}[/]'
+                      f'\n[purple]{kg}KG de carne será necessário[/]\nR$82.40 o KG da carne'
+                      f'\n[red]Custo total de R${valor:.2f}[/] '
+                      f'\n[yellow]R${preco_p:.2f} pra cada pessoa[/]',
+                      title = self.titulo,style = 'blue', width= 65)
         return caixa
-c1 = Churrasco('Churrasco do Rian',50)
+c1 = Churrasco('Churrasco do Rian',15)
 print(c1.analisar())
 
 c2 = Churrasco('BANQUETE DE NÚMENOR',90)
