@@ -14,10 +14,10 @@ class Produto :
         print(f'Produto {self.nome} no valor R${self.preco} cadastrado com sucesso')
 
     def etiqueta(self):
-        caixa = Panel(f'[red]R${self.preco:.2f}[/]',title = self.nome,width = 10, style = 'blue')
+        caixa = Panel(f'VALOR:[red]{self.preco:^15,.2f}[/]',title = self.nome,width = 34, style = 'blue')
         print(caixa)
 
-p1 = Produto('Teclado',650)
+p1 = Produto('Iphone 17 Pro Max',25_000.85)
 p1.etiqueta()
 
 p2 = Produto('Caminhoneta',34000)
